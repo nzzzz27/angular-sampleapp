@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    &-menu {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        li {
+            padding: 0 15px;
+            margin: 0 5px;
+        }
+    }
+}
