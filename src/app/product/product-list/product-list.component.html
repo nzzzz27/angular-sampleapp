@@ -1,12 +1,15 @@
+
 <div class="cardlist">
     <div class="cardlist__card"  *ngFor="let product of products; index as productId">
-        <a [routerLink]="['detail', productId]">
-            <img src="{{ product.image }}" alt="{{ product.name }}">
-            <div class="cardlist__main">
-                <p>{{ product.name }}</p>
-                <p>{{ product.price }}</p>
-                <p>{{ product.description }}</p>
-            </div>
-        </a>
+        <div>
+            <a [routerLink]="[ product._id ]">
+                <img src="{{ product.image }}" alt="{{ product.name }}">
+                <div class="cardlist__main">
+                    <p>{{ product.name }}</p>
+                    <p>{{ product.price }}</p>
+                    <p>{{ product.description }}</p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>

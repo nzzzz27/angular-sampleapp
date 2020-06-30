@@ -1,6 +1,11 @@
 <h2>Product Detail</h2>
-<div>
-    <p>{{ product.name }}</p>
-    <p>{{ product.price }}</p>
-    <p>{{ product.description }}</p>
+<div *ngIf="product">
+    <div>
+        <div>
+            <img src="{{ product.image  }}" alt="">
+        </div>
+        <p>{{ product.name }}</p>
+        <p>{{ product.price }}</p>
+        <p>{{ product.description }}</p>
+    </div>
 </div>
